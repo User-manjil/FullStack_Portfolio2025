@@ -1,0 +1,25 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Syne:wght@400..800&display=swap');
+
+@import "tailwindcss";
+@layer theme {
+:root{
+  --bg:#080808;
+  --bg2:#111;
+  --surface:#161616;
+  --border:#222;
+  --border2:#2e2e2e;
+  --text:#f2ede4;
+  --muted:#5a5a5a;
+  --muted2:#888;
+  --lime:#d4ff00;
+  --lime-dim:rgba(212,255,0,0.1);
+  --lime-glow:rgba(212,255,0,0.25);
+  --red:#ff4444;
+  --r:16px;
+  --transition:0.65s cubic-bezier(0.77,0,0.175,1);
+}
+}
+body{
+  background-color: var(--bg);
+}
