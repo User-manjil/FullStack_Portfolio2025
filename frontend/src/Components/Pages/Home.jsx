@@ -95,6 +95,27 @@ const Home = () => {
             <BlogCard/>
           </div>
       </section>
+      <section className=" mt-50 mb-40 items-center justify-center">
+         <div className="flex w-full text-center justify-center text-(--lime) text-xs font-medium gap-2 font-[poppins]  items-center">
+        <div className="flex w-10  h-[1px] bg-(--lime)  "></div> LET'S BUILD TOGETHER
+            </div>
+            <div className=" text-(--text) font-[Syne] font-black text-8xl text-center">
+              Got an <span className="text-(--lime)">idea?</span>
+              Let's make it real.
+            </div>
+            <div className="flex text-(--muted2) justify-center text-center w-full  mt-10 items-center">
+              Whether it's a startup MVP, a rebrand, or a complex web app — I'm ready to build something remarkable.
+            </div>
+            <div className="flex w-full  justify-center mt-10  items-center">
+              <button className="bg-(--lime) text-(--bg) px-8 py-4 font-medium">Start a Conversation </button>
+            </div>
+            <div className="flex mx-auto text-(--text) font-[Syne] relative w-fit  text-center justify-center mt-10 hover:text-(--lime) cursor-pointer  ">
+             
+              <p className=" w-fit after:w-full font-bold text-4xl after:content-[''] after:h-1 after:bg-(--lime) after:absolute after:left-0 after:bottom-[0]">
+                manjil.dev@gmail.com
+              </p>
+            </div>
+      </section >
     </div>
   );
 };
