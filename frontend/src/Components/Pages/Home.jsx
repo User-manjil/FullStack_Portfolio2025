@@ -12,8 +12,8 @@ const Home = () => {
   ];
 
   return (
-    <div className="flex-col w-full flex overflow-hidden">
-      <div className="bg-(--bg) w-full h-fit pt-40 pb-5 max-w-6xl">
+    <div className="flex-col w-full flex ">
+      <div className="bg-(--bg) w-full h-fit pt-40 pb-5 max-w-6xl  mb-15">
         
         <div className="flex font-[Bricolage Grotesque] text-[12px] px-3 py-1 rounded-full items-center gap-2 border border-(--muted) font-medium text-(--muted2) tracking-wider w-fit">
           <div className="flex bg-green-400 w-2 h-2 rounded-full"></div>
@@ -51,7 +51,7 @@ const Home = () => {
         </div>
       </div>
 
-      {/* <Marquee /> */}
+      <Marquee   />
 
       {/* Stats Section */}
       <section className="flex items-center justify-center mx-auto my-40 p-4">

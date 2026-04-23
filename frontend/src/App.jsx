@@ -4,6 +4,8 @@ import { Route, Routes } from 'react-router'
 import Home from './Components/Pages/Home'
 import Work from './Components/Pages/Work'
 import Footer from './Components/Reusable/Footer'
+import Blog from './Components/Pages/Blog'
+import Contact from './Components/Pages/Contact'
 
 const App = () => {
   return (
@@ -13,6 +15,8 @@ const App = () => {
         <Route path='/' element={<Home/>} />
         <Route path='/home' element={<Home/>} />
         <Route path='/work' element={<Work/>} />
+        <Route path='/blog' element={<Blog/>} />
+        <Route path='/blog' element={<Contact/>} />
       </Routes>
       <Footer/>
     </div>
