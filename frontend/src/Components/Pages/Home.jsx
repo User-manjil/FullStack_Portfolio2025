@@ -51,7 +51,7 @@ const Home = () => {
         </div>
       </div>
 
-      <Marquee />
+      {/* <Marquee /> */}
 
       {/* Stats Section */}
       <section className="flex items-center justify-center mx-auto my-40 p-4">
@@ -82,9 +82,7 @@ const Home = () => {
       </section>
 
       
-      
-
-
+    
 
       <section>
           <TitleSection />

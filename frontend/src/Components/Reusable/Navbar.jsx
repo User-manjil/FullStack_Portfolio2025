@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     
-    <div className="flex fixed w-full max-w-6xl bg-black/50 backdrop-blur-md z-50 mx-auto justify-between items-center h-15 px-5">
+    <div className="flex fixed w-full max-w-6xl bg-black/70 backdrop-blur-md z-50 mx-auto justify-between items-center h-15 px-5">
       
       {/* Logo */}
       <div className="flex font-[Syne] font-black text-[var(--text)] text-xl">
