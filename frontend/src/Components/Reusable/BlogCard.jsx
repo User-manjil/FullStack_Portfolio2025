@@ -34,7 +34,7 @@ const BlogCard = () => {
 
       <div className="flex justify-between">
         <div className="flex flex-col">
-          <div className="text-xl font-bold text-[var(--text)]">
+          <div className="text-xl font-bold font-[Syne] text-[var(--text)]">
             The Art of Meaningful Micro-interactions
           </div>
           <div className="text-sm text-[var(--muted2)]">

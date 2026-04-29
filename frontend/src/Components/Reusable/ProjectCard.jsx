@@ -14,7 +14,7 @@ const ProjectCard = () => {
     <div
       onClick={goToDetails}
       className="
-        w-[550px] mt-5 flex flex-col cursor-pointer group 
+        w-[550px] mt-5 flex flex-col cursor-pointer group  group-hover:mt-5
         transition-all duration-300
       "
     >
@@ -59,7 +59,7 @@ const ProjectCard = () => {
               key={el}
               className="
                 px-4 py-1 text-xs border border-[var(--border2)] 
-                text-[var(--muted2)] rounded-full
+                text-[var(--muted2)] rounded-full group-hover:text-(--lime)
               "
             >
               {el}
@@ -69,7 +69,7 @@ const ProjectCard = () => {
 
         {/* TITLE + DESCRIPTION */}
         <div className="flex flex-col w-full px-4 mt-3">
-          <h1 className="font-bold text-2xl text-[var(--text)]">
+          <h1 className="font-bold text-2xl text-[var(--text)] font-[Syne]">
             Nexus Dashboard
           </h1>
           <p className="text-[var(--muted)]">
@@ -83,10 +83,10 @@ const ProjectCard = () => {
           className="
             flex text-[var(--muted2)] mt-5 py-3 
             border-t border-[var(--border)] px-4 justify-between
-            group-hover:text-[var(--lime)] transition-colors
+            group-hover:text-[var(--lime)] transition-all
           "
         >
-          <div className="text-xs">VIEW CASE STUDY</div>
+          <div className="text-xs">VIEW CASE STUDY <span className=" transform group-hover:translate-4">→</span></div>
           <div className="text-xs">2024</div>
         </div>
       </div>
