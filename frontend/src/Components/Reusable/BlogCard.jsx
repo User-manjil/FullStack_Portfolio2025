@@ -10,6 +10,7 @@ const BlogCard = () => {
         border-[var(--border2)] 
         hover:bg-[var(--bg2)] 
         relative
+        
         bg-[var(--bg)]
 
         
@@ -30,14 +31,14 @@ const BlogCard = () => {
         after:transform
 
         group-hover:after:scale-y-100"></div>
-      <div className="flex text-xs text-[var(--lime)]">01</div>
+      <div className="flex text-xs text-[var(--lime)] group-hover:transform  group-hover:translate-x-1.5 duration-300">01</div>
 
       <div className="flex justify-between">
         <div className="flex flex-col">
-          <div className="text-xl font-bold font-[Syne] text-[var(--text)]">
+          <div className="text-xl font-boldgroup-hover:transform  group-hover:translate-x-1.5 duration-300 font-[Syne] text-[var(--text)]">
             The Art of Meaningful Micro-interactions
           </div>
-          <div className="text-sm text-[var(--muted2)]">
+          <div className="text-sm group-hover:transform  group-hover:translate-x-1.5 duration-300 text-[var(--muted2)]">
             7min read · Apr 2025 · Design
           </div>
         </div>

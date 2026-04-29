@@ -5,7 +5,7 @@ import TitleSection from '../Reusable/TitleSection'
 const Work = () => {
   return (
     <div className='flex flex-col mt-20'>
-      <TitleSection />
+      <TitleSection  subTitle="PORTFOLIO" bigTitle="Selected Work" hasBtn={false}  />
      <div className="grid sm:grid-cols-2 gap-5 grid-cols-1  my-10">
           <ProjectCard/>
           <ProjectCard/>

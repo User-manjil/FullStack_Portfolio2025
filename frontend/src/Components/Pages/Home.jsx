@@ -15,7 +15,7 @@ const Home = () => {
     <div className="flex-col w-full flex ">
       <div className="bg-(--bg) w-full h-fit pt-40 pb-5 max-w-6xl  mb-15">
         
-        <div className="flex font-[Bricolage Grotesque] text-[12px] px-3 py-1 rounded-full items-center gap-2 border border-(--muted) font-medium text-(--muted2) tracking-wider w-fit">
+        <div className="flex font-[Bricolage Grotesque] text-[12px] px-3 py-1 rounded-full items-center gap-2 border border-(--border) font-medium text-(--muted2) tracking-wider w-fit">
           <div className="flex bg-green-400 w-2 h-2 rounded-full"></div>
           OPEN TO NEW WORK
         </div>
@@ -44,7 +44,7 @@ const Home = () => {
             <button className="bg-(--lime) font-medium px-5 h-10">
               VIEW MY WORK <span className="rotate-x-6">→</span>
             </button>
-            <button className="font-medium border border-(--muted2) h-10 px-5 text-(--muted2) hover:text-(--text)">
+            <button className="font-medium border border-(--border) duration-300 hover:-translate-y-1 hover:border-white h-10 px-5 text-(--muted2) hover:text-(--text)">
               START A PROJECT →
             </button>
           </div>
@@ -59,7 +59,7 @@ const Home = () => {
           {stats.map((el, i) => (
             <div
               key={i}
-              className="flex flex-col border border-(--muted2) hover:bg-(--bg2) ease-(--ease-smooth) duration-75 rounded-sm py-10 px-20 font-[Syne] font-black items-center text-7xl text-(--lime)"
+              className="flex flex-col border border-(--border)  hover:bg-(--bg2) ease-(--ease-smooth) duration-75 rounded-sm py-10 px-20 font-[Syne] font-black items-center text-7xl text-(--lime)"
             >
               {el.value}
               <span className="text-sm text-(--muted2) font-medium font-[poppins]">{el.text}</span>
@@ -70,7 +70,7 @@ const Home = () => {
 
       <section>
         {/* // featured work section */}
-      <TitleSection/>
+      <TitleSection  subTitle='FEATURED WORK' bigTitle="SELECTED PROJECTS" buttonContent="ALL PROJECTS" hasBtn={true} link='/work'/>
       <div className="grid sm:grid-cols-2 grid-cols-1  my-10">
           <ProjectCard/>
           <ProjectCard/>
@@ -85,7 +85,8 @@ const Home = () => {
     
 
       <section>
-          <TitleSection />
+          <TitleSection subTitle="FROME THE BLOG" bigTitle="Thoughts &
+Insights"  buttonContent="ALL ARTICLES" hasBtn={true} link='/blog' />
           <div className="flex mt-10 flex-col gap-0 rounded-2xl border border-(--border2)">  
             <BlogCard/>
             <BlogCard/>

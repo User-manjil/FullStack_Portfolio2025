@@ -6,7 +6,7 @@ import TitleSection from '../Reusable/TitleSection'
 const Blog = () => {
   return (
     <div className='flex flex-col w-full mt-20'>
-      <TitleSection />
+      <TitleSection subTitle="WRITING" bigTitle="Thoughts & Insights" />
         <div className=" w-full flex flex-col my-10 rounded-t-">
           
            <BigBlogCard />
