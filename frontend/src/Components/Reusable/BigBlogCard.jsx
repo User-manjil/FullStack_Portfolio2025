@@ -2,7 +2,7 @@ import React from 'react'
 
 const BigBlogCard = () => {
   return (
-    <div className='flex flex-col border relative group border-(--border) px-10 py-10 hover:bg-(--bg2)'>
+    <div className='flex w-full flex-col border relative group border-(--border) px-10 py-10 hover:bg-(--bg2)'>
       <div className="after:content-['']
         after:absolute
         after:left-0
@@ -19,7 +19,7 @@ const BigBlogCard = () => {
 
         group-hover:after:scale-y-100"></div>
       <div className="flex text-(--lime) group-hover:transform  group-hover:translate-x-1.5 duration-300 font-[Syne]">Design</div>
-      <div className="flex justify-between">
+      <div className="flex flex-col sm:flex-row justify-between">
 
         <div className="flex flex-col group-hover:transform  group-hover:translate-x-1.5 duration-300"> 
             <div className="flex text-(--text) font-[Syne] text-xl font-bold  ">The Art of Meaningful Micro-interactions</div>

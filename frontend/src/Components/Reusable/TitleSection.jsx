@@ -14,8 +14,8 @@ const TitleSection = (props) => {
         {props.hasBtn ?  (
       <div className="flex  ">
         <Link to={props.link}>
-           <button  className="font-medium border  border-(--border2) px-5 h-10 text-(--muted2) hover:text-(--text)">
-             {props.buttonContent}<span class="mx-1">→</span>
+           <button  className="font-medium w-fit border gap-2 group border-(--border2) flex py-2 px-5 h-10 text-(--muted2) hover:text-(--text)">
+             {props.buttonContent}<p class="duration-300 group-hover:translate-x-0.5">→</p>
             </button>
         </Link>
         

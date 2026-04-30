@@ -1,7 +1,7 @@
 
 // import { NavLink } from "react-router-dom";
 
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 
 const Navbar = () => {
   const uiLink = [
@@ -55,9 +55,9 @@ const Navbar = () => {
       </ul>
 
       {/* CTA Button */}
-      <div className="flex border px-4 py-2 border-[var(--muted)] h-fit font-[Bricolage Grotesque] hover:bg-[var(--lime)] hover:text-black font-medium text-[10px] w-fit rounded-[var(--r)] text-[var(--text)] transition-all duration-300 cursor-pointer">
-        LET'S TALK
-      </div>
+      
+       <Link to={'/contact'} > <div  className="flex border px-4 py-2 border-[var(--muted)] h-fit font-[Bricolage Grotesque] hover:bg-[var(--lime)] hover:text-black font-medium text-[10px] w-fit rounded-[var(--r)] text-[var(--text)] transition-all duration-300 cursor-pointer"> LET'S TALK </div></Link>
+      
     </div>
   );
 };

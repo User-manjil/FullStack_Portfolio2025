@@ -3,6 +3,7 @@ import Marquee from "../Reusable/Marquee";
 import TitleSection from "../Reusable/TitleSection";
 import ProjectCard from "../Reusable/ProjectCard";
 import BlogCard from "../Reusable/BlogCard";
+import { Link } from "react-router";
 
 const Home = () => {
   const stats = [
@@ -70,7 +71,8 @@ const Home = () => {
 
       <section>
         {/* // featured work section */}
-      <TitleSection  subTitle='FEATURED WORK' bigTitle="SELECTED PROJECTS" buttonContent="ALL PROJECTS" hasBtn={true} link='/work'/>
+      <TitleSection  subTitle='FEATURED WORK' bigTitle="SELECTED PROJECTS" buttonContent="ALLPROJECTS" hasBtn={true} link='/work'/>
+      
       <div className="grid sm:grid-cols-2 grid-cols-1  my-10">
           <ProjectCard/>
           <ProjectCard/>
@@ -106,7 +108,9 @@ Insights"  buttonContent="ALL ARTICLES" hasBtn={true} link='/blog' />
               Whether it's a startup MVP, a rebrand, or a complex web app — I'm ready to build something remarkable.
             </div>
             <div className="flex w-full  justify-center mt-10  items-center">
-              <button className="bg-(--lime) text-(--bg) px-8 py-4 font-medium">Start a Conversation </button>
+              <Link to={'/contact'}>  <button className="bg-(--lime) text-(--bg) px-8 py-4 font-medium">Start a Conversation </button>
+              </Link>
+             
             </div>
             <div className="flex mx-auto text-(--text) font-[Syne] relative w-fit  text-center justify-center mt-10 hover:text-(--lime) cursor-pointer  ">
              

@@ -3,18 +3,16 @@ import { useNavigate } from "react-router";
 
 
 const ProjectCard = () => {
-  const navigate = useNavigate();
+  
   const stack = ["SAAS", "REACT", "CSS"];
 
-  const goToDetails = () => {
-    navigate("/project/nexus"); // change to your actual details route
-  };
+ 
 
   return (
     <div
-      onClick={goToDetails}
+      
       className="
-        w-[550px] mt-5 flex flex-col cursor-pointer group  group-hover:mt-5
+         w-[300px]  lg:w-[550px]  mt-5 flex flex-col cursor-pointer group  group-hover:mt-5
         transition-all duration-300
       "
     >
