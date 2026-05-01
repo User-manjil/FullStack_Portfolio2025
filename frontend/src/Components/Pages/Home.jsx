@@ -4,6 +4,7 @@ import TitleSection from "../Reusable/TitleSection";
 import ProjectCard from "../Reusable/ProjectCard";
 import BlogCard from "../Reusable/BlogCard";
 import { Link } from "react-router";
+import Transition from "../Reusable/Transition";
 
 const Home = () => {
   const stats = [
@@ -14,6 +15,7 @@ const Home = () => {
 
   return (
     <div className="flex-col w-full flex ">
+    
       <div className="bg-(--bg) w-full h-fit pt-40 pb-5 max-w-6xl  mb-15">
         
         <div className="flex font-[Bricolage Grotesque] text-[12px] px-3 py-1 rounded-full items-center gap-2 border border-(--border) font-medium text-(--muted2) tracking-wider w-fit">

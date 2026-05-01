@@ -1,6 +1,7 @@
 import React from 'react'
 
 const BigBlogCard = () => {
+  
   return (
     <div className='flex w-full flex-col border relative group border-(--border) px-10 py-10 hover:bg-(--bg2)'>
       <div className="after:content-['']

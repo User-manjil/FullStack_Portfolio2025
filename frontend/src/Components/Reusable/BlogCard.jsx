@@ -35,7 +35,7 @@ const BlogCard = () => {
 
       <div className="flex justify-between">
         <div className="flex flex-col">
-          <div className="text-xl font-boldgroup-hover:transform  group-hover:translate-x-1.5 duration-300 font-[Syne] text-[var(--text)]">
+          <div className="text-xl font-bold group-hover:transform  group-hover:translate-x-1.5 duration-300 font-[Syne] text-[var(--text)]">
             The Art of Meaningful Micro-interactions
           </div>
           <div className="text-sm group-hover:transform  group-hover:translate-x-1.5 duration-300 text-[var(--muted2)]">
