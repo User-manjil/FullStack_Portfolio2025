@@ -11,7 +11,7 @@ const marqueeItems = [
 
 const Marquee = () => {
   return (
-    <div className="border-t border-b w-full overflow-hidden  border-[var(--border)] py-4  bg-[var(--bg2)]">
+    <div className="border-t border-b w-full overflow-hidden   border-[var(--border)] py-4  ">
       <div
         className="flex w-max"
         style={{

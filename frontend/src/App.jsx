@@ -16,7 +16,7 @@ const App = () => {
   const location = useLocation();
 
   return (
-    <div className="w-full mx-auto px-10 sm:px-0 flex flex-col max-w-6xl">
+    <div className="w-full mx-auto  flex-col max-w-6xl">
       <Navbar />
 
       <Transition key={location.pathname}>
