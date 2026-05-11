@@ -1,6 +1,6 @@
 import React from "react";
 
-const BlogCard = () => {
+const BlogCard = (props) => {
   return (
     <div
       className="
@@ -33,7 +33,7 @@ const BlogCard = () => {
       ></div>
 
       <div className="flex text-xs md:text-sm text-[var(--lime)] group-hover:translate-x-1.5 duration-300">
-        01
+       {props.index}
       </div>
 
       {/* Content Wrapper */}
@@ -47,7 +47,7 @@ const BlogCard = () => {
               font-[Syne] text-[var(--text)]
             "
           >
-            The Art of Meaningful Micro-interactions
+            {props.heading}
           </div>
 
           <div
@@ -58,7 +58,7 @@ const BlogCard = () => {
               mt-1
             "
           >
-            7min read · Apr 2025 · Design
+            {props.readtime} · Apr 2025 · Design
           </div>
         </div>
 

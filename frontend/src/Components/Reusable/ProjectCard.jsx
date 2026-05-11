@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router";
 
-const ProjectCard = () => {
+const ProjectCard = (props) => {
   const navigate = useNavigate();
   const stack = ["SAAS", "REACT", "CSS"];
 
@@ -27,7 +27,7 @@ const ProjectCard = () => {
             group-hover:brightness-75
           "
         >
-          NEXUS
+         {(props.heading)}
         </div>
 
         {/* Hover Button */}
@@ -66,11 +66,10 @@ const ProjectCard = () => {
         {/* TITLE + DESCRIPTION */}
         <div className="flex flex-col w-full px-4 mt-3">
           <h1 className="font-bold text-xl sm:text-2xl text-[var(--text)] font-[Syne]">
-            Nexus Dashboard
+           {props.subTitle}
           </h1>
           <p className="text-[var(--muted)] text-sm sm:text-base mt-1">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima ab
-            alias quibusdam!
+           {props.subheading}
           </p>
         </div>
 

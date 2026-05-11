@@ -1,40 +1,8 @@
 import React from "react";
 import { Link, useParams } from "react-router";
-
+import { blogPosts } from "./assets";
 // Placeholder blog data (replace later with backend)
-const blogPosts = [
-  {
-    id: "1",
-    title: "The Art of Meaningful Micro-interactions",
-    author: "Manjil Aryal",
-    date: "April 28, 2026",
-    readTime: "4 min read",
-    avatar: "MA",
-    content: `
-      Micro-interactions are the small, subtle animations or responses that
-      bring life to digital interfaces. They guide the user, communicate state,
-      and make an experience feel intentional and enjoyable.
 
-      ## Why Micro-interactions Matter
-      Humans naturally respond to feedback. When an interface reacts to our
-      tap, swipe, or click, it reassures us that the system understands our
-      intention. Without micro-interactions, digital spaces feel cold and static.
-
-      ## Types of Micro-interactions
-      - Button hover and press feedback  
-      - Subtle loading animations  
-      - Like and favorite animations  
-      - Page transitions and smooth fades  
-      - Input field validation feedback  
-
-      > “The best micro-interactions are the ones users barely notice—  
-      they just feel that the interface is smooth.”
-
-      A well-designed interface doesn't need to shout. It communicates
-      through movement, timing, and responsive design.
-    `,
-  },
-];
 
 const BlogDetail = () => {
   const { id } = useParams();

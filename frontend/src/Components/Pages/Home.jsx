@@ -4,7 +4,7 @@ import TitleSection from "../Reusable/TitleSection";
 import ProjectCard from "../Reusable/ProjectCard";
 import BlogCard from "../Reusable/BlogCard";
 import { Link } from "react-router";
-
+import { blogPosts } from "../Reusable/assets";
 const Home = () => {
   const stats = [
     { value: "10+", text: "Projects" },
@@ -104,10 +104,9 @@ const Home = () => {
         />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 my-10">
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+        <Link to={'/work/1'}>  <ProjectCard /> </Link>
+        <Link to={'/work/2'}>  <ProjectCard /> </Link>
+         
         </div>
       </section>
 
@@ -122,10 +121,9 @@ const Home = () => {
         />
 
         <div className="flex mt-10 flex-col gap-0 rounded-2xl border border-[var(--border2)]">
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
+         {blogPosts.map((el,index)=>{
+            return <div><Link key={index} to={`/blog/${el.id}`}><BlogCard heading={el.title} index={index +1} readtime={el.readTime} /></Link></div>
+         })}
         </div>
       </section>
 

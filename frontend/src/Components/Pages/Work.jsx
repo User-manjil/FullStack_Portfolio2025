@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import ProjectCard from '../Reusable/ProjectCard'
 import TitleSection from '../Reusable/TitleSection'
 import { Link } from 'react-router'
-
+import { projectsData } from '../Reusable/assets'
 const Work = () => {
   const [activeFilter, setActiveFilter] = useState('All')
   const filters = ['All', 'SAAS', 'Ecommerce', 'WEB APPS']
@@ -40,18 +40,9 @@ const Work = () => {
 
       {/* Project Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-2 gap-4 sm:gap-5 my-8 sm:my-10">
-        <Link to={'/work/SAAS'} className="block w-full">
-          <ProjectCard />
-        </Link>
-        <Link to={'/work/SAAS'} className="block w-full">
-          <ProjectCard />
-        </Link>
-        <Link to={'/work/SAAS'} className="block w-full">
-          <ProjectCard />
-        </Link>
-        <Link to={'/work/SAAS'} className="block w-full">
-          <ProjectCard />
-        </Link>
+       {projectsData.map((el,index)=>{
+            return <div><Link to={`/work/${el.id}`}><ProjectCard heading={el.title.slice(0,9)} subTitle={el.title}  subheading={el.description} /></Link></div>
+       })}
       </div>
 
     </div>
