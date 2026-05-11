@@ -5,6 +5,7 @@ import ProjectCard from "../Reusable/ProjectCard";
 import BlogCard from "../Reusable/BlogCard";
 import { Link } from "react-router";
 import { blogPosts } from "../Reusable/assets";
+import { projectsData } from "../Reusable/assets";
 const Home = () => {
   const stats = [
     { value: "10+", text: "Projects" },
@@ -104,8 +105,12 @@ const Home = () => {
         />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 my-10">
-        <Link to={'/work/1'}>  <ProjectCard /> </Link>
-        <Link to={'/work/2'}>  <ProjectCard /> </Link>
+        {projectsData.map((el,index)=>{
+          if(el.id%2 == 0){
+            return <div><Link to={`/work/${el.id}`}><ProjectCard heading={el.title.slice(0,9)} subTitle={el.title}  subheading={el.description} /></Link></div>
+          }
+        })}
+        
          
         </div>
       </section>

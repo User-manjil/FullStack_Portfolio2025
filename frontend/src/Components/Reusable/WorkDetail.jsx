@@ -23,7 +23,7 @@ const WorkDetail = () => {
     <div className="w-full mt-10 text-[var(--text)] max-w-6xl mx-auto px-4">
 
       {/* Banner */}
-      <Banner />
+      <Banner title={project.title} subTitle={project.title.slice(0,8)} />
 
       {/* Back */}
       <div className="my-4 text-[var(--muted2)] font-[Syne] font-bold">

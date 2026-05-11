@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router";
 
-const Banner = () => {
+const Banner = (props) => {
   const { id } = useParams();
   const techStack = ["SAAS", "REACT", "TYPESCRIPT", "GSAP"];
 
@@ -23,7 +23,7 @@ const Banner = () => {
 
         {/* Title */}
         <h1 className="text-3xl md:text-5xl z-20 mt-4 font-black font-[Syne] text-white">
-          SAAS DASHBOARD
+          {props.title}
         </h1>
 
         {/* Giant Background Word */}
@@ -45,7 +45,7 @@ const Banner = () => {
           lg:text-[220px]
         "
         >
-          SAAS
+         {props.subTitle}
         </h1>
       </div>
     </div>
