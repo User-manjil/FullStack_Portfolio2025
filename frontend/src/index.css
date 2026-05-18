@@ -23,3 +23,41 @@
 body{
   background-color: var(--bg);
 }
+
+.hero-grid-bg {
+  isolation: isolate;
+}
+
+.hero-grid-layer {
+  background-image:
+    linear-gradient(rgba(242, 237, 228, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(242, 237, 228, 0.08) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent 86%);
+  opacity: 0.46;
+  animation: hero-grid-drift 24s linear infinite;
+}
+
+.hero-grid-glow {
+  background:
+    radial-gradient(circle at 18% 20%, rgba(212, 255, 0, 0.12), transparent 28%),
+    radial-gradient(circle at 82% 28%, rgba(242, 237, 228, 0.08), transparent 24%);
+  filter: blur(2px);
+  opacity: 0.75;
+}
+
+@keyframes hero-grid-drift {
+  from {
+    background-position: 0 0, 0 0;
+  }
+
+  to {
+    background-position: 56px 56px, 56px 56px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-grid-layer {
+    animation: none;
+  }
+}

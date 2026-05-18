@@ -27,7 +27,7 @@ const Contact = () => {
     alert("Message Sent!");
   };
   return (
-    <div className='my-25  w-full flex flex-col lg:flex-row gap-10'>
+    <div className='my-25  w-full flex flex-col lg:flex-row gap-10 max-w-6xl mx-auto'>
   
   {/* LEFT SIDE */}
   <div className="flex flex-col w-full lg:w-1/2">

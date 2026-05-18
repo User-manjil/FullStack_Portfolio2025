@@ -8,7 +8,7 @@ const Work = () => {
   const filters = ['All', 'SAAS', 'Ecommerce', 'WEB APPS']
 
   return (
-    <div className='flex flex-col mt-12 sm:mt-16 lg:mt-20 px-4 sm:px-6 lg:px-2'>
+    <div className='flex flex-col mt-12 sm:mt-16 lg:mt-20 px-4 sm:px-6 lg:px-2 mx-auto max-w-6xl'>
 
       {/* Title Section */}
       <TitleSection subTitle="PORTFOLIO" bigTitle="Selected Work" hasBtn={false} />

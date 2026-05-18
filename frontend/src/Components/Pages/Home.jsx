@@ -17,7 +17,10 @@ const Home = () => {
     <div className="flex flex-col w-full">
 
       {/* HERO SECTION */}
-      <div className="bg-[var(--bg)] w-full pt-32 pb-10 max-w-6xl mx-auto px-4">
+      <div className="hero-grid-bg bg-[var(--bg)] relative mb-10 overflow-hidden w-full pt-32 pb-10  mx-auto px-4">
+        <div className="pointer-events-none absolute inset-0 hero-grid-layer" aria-hidden="true"></div>
+        <div className="pointer-events-none absolute inset-0 hero-grid-glow" aria-hidden="true"></div>
+        <div className="relative z-10 max-w-6xl mx-auto">
 
         {/* STATUS BADGE */}
         <div className="flex font-[Bricolage Grotesque] text-xs px-3 py-1 rounded-full items-center gap-2 border border-[var(--border)] text-[var(--muted2)] w-fit">
@@ -71,12 +74,13 @@ const Home = () => {
           </div>
 
         </div>
+        </div>
       </div>
 
       <Marquee />
 
       {/* STATS */}
-      <section className="flex justify-center mx-auto my-20 p-4">
+      <section className="flex justify-center mx-auto my-20 p-4 max-w-6xl">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
           {stats.map((el, i) => (
             <div
@@ -95,7 +99,7 @@ const Home = () => {
       </section>
 
       {/* FEATURED WORK */}
-      <section className="px-4">
+      <section className="px-4 max-w-6xl mx-auto">
         <TitleSection
           subTitle="FEATURED WORK"
           bigTitle="SELECTED PROJECTS"
@@ -105,7 +109,7 @@ const Home = () => {
         />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 my-10">
-        {projectsData.map((el,index)=>{
+        {projectsData.map((el)=>{
           if(el.id%2 == 0){
             return <div><Link to={`/work/${el.id}`}><ProjectCard heading={el.title.slice(0,9)} subTitle={el.title}  subheading={el.description} /></Link></div>
           }
@@ -116,7 +120,7 @@ const Home = () => {
       </section>
 
       {/* BLOG SECTION */}
-      <section className="px-4">
+      <section className="px-4 max-w-6xl mx-auto">
         <TitleSection
           subTitle="FROM THE BLOG"
           bigTitle="Thoughts & Insights"
@@ -133,7 +137,7 @@ const Home = () => {
       </section>
 
       {/* CTA SECTION */}
-      <section className="mt-32 mb-32 px-4 text-center">
+      <section className="mt-32 mb-32 px-4 text-center max-w-6xl mx-auto">
 
         <div className="flex justify-center items-center text-[var(--lime)] text-xs font-medium font-[Poppins] gap-2">
           <div className="w-10 h-[1px] bg-[var(--lime)]"></div>
