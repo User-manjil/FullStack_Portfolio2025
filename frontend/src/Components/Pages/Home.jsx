@@ -59,16 +59,16 @@ const Home = () => {
           </div>
 
           {/* BUTTONS */}
-          <div className="flex gap-4 sm:justify-end">
+          <div className="flex flex-col sm:flex-row sm:justify-end mx-auto my-5 gap-10 sm:gap-4">
             <Link to="/work">
-              <button className="bg-[var(--lime)] text-black font-medium px-5 py-2 h-10">
-                VIEW MY WORK →
+              <button className="bg-[var(--lime)] flex  group cursor-pointer text-black font-medium px-5 py-2 h-10">
+                VIEW MY WORK <div className="group-hover:translate-x-1 duration-300"> →</div>
               </button>
             </Link>
 
             <Link to="/contact">
-              <button className="font-medium border border-[var(--border)] hover:border-white hover:text-[var(--text)] duration-300 px-5 py-2 h-10 text-[var(--muted2)]">
-                START A PROJECT →
+              <button className="font-medium flex group border border-[var(--border)] hover:border-white hover:text-[var(--text)] duration-300 px-5 py-2 h-10 text-[var(--muted2)]">
+                START A PROJECT <div className="group-hover:translate-x-1 duration-300"> →</div>
               </button>
             </Link>
           </div>

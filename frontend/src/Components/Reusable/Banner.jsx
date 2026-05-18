@@ -6,7 +6,7 @@ const Banner = (props) => {
   const techStack = ["SAAS", "REACT", "TYPESCRIPT", "GSAP"];
 
   return (
-    <div className="w-full">
+    <div className="w-full mt-10">
       <div className="relative flex flex-col h-[350px] md:h-[420px] p-1 md:p-12 bg-gradient-to-t from-green-800 to-green-900 overflow-hidden">
 
         {/* Tech Tags */}
@@ -14,7 +14,7 @@ const Banner = (props) => {
           {techStack.map((el, index) => (
             <div
               key={index}
-              className="border border-[var(--border)] rounded-xl text-[var(--muted2)] text-xs font-normal px-3 py-1 bg-black/20 backdrop-blur-sm"
+              className="border border-[var(--text)] rounded-xl text-[var(--text)] text-xs font-normal px-3 py-1  backdrop-blur-sm"
             >
               {el}
             </div>
@@ -31,13 +31,13 @@ const Banner = (props) => {
           className="
           absolute 
           font-black font-[Syne]
-          text-green-700
+          text-green-800
           text-opacity-20
           select-none
           whitespace-nowrap
           tracking-tighter
           z-10
-          pointer-events-none
+          pointer-events-none8
           left-1/2 -translate-x-1/2
           top-10 md:top-0
           text-[90px] 
